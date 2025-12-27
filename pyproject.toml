@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metastat"
+version = "0.1.0"
+description = "Minimal meta-analysis helpers"
+authors = [{ name = "MetaStat" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23",
+  "scipy>=1.10",
+]
+optional-dependencies = { rmath = ["Rmath4>=0.2.0"] }
+
+[project.urls]
+Homepage = "https://github.com/anthonyozerov/metastat"
+Repository = "https://github.com/anthonyozerov/metastat"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
